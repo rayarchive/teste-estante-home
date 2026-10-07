@@ -1740,6 +1740,9 @@
         function render() {
             document.querySelectorAll('.shelf-row').forEach(s => s.innerHTML = '');
             if (livros.length === 0) return;
+
+            // Ordena por série e depois por volume
+            const sortedBooks = [...livros];
             });
 
             // --- CALCULA A ESCALA (px por cm) ---
